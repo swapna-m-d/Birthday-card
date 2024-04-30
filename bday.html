@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Happy 21</title>
+    <style>
+        #container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .book{
+            position: relative;
+            border-radius: 10px;
+            width: 210px;
+            height: 300px;
+
+            /* Internal Image */
+            background-image: url(p.jpg);
+            background-size: cover;
+            background-position: center;
+            background-size: 90%;
+            -webkit-box-shadow: 1px 1px 12px black;
+            box-shadow: 1px 1px 12px black;
+            -webkit-transform: preserve-3d;
+            -ms-transform:preserve-3d;
+            transform: preserve-3d;
+            -webkit-perspective: 2000px;
+            perspective: 2000px;
+        }
+        .cover{
+            top:0;
+            position: absolute;
+            background-color: lightgray;
+
+
+            /* cover image */
+            background-image: url(cover.jpeg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transform-origin: 0;
+            -ms-transform-origin: 0;
+            transform-origin: 0;
+            -webkit-box-shadow: 1px 1px 12px black;
+            box-shadow: 1px 1px 12px black;
+        }
+        .book:hover .cover{
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transform: rotateY(-85deg);
+            -ms-transform: rotateY(-85deg);
+            transform: rotateY(-135deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="book">
+            <div class="cover"> 
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
